@@ -1,0 +1,25 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" controllerName="sap.ui.bootcamp.controller.App">
+	<!--<Text text="Hello World from XML"/>-->
+	<Label
+		labelFor="Uname"
+		text="Username"/>
+	<Input
+		id="Uname"
+		value="{/field/username}"
+		description="Hello {/field/username}"
+		valueLiveUpdate = "true"
+		type="Text"
+		required="True"
+		placeholder="Enter username..."/>
+	<Label
+		labelFor="Pword"
+		text="Password"/>
+	<Input
+		id="Pword"
+		type="Password"
+		required="True"
+		placeholder="Enter password..."/>
+	<Button
+		press="onLoginPress"
+		text="{i18n>loginButtonText}"/>
+</mvc:View>
